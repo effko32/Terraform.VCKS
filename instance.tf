@@ -10,6 +10,6 @@ resource "vkcs_compute_instance" "basic" {
   }
 
   network {
-    uuid = vkcs_networking_network.network_1.id
+    uuid = vkcs_networking_network.compute.id
   }
 }
