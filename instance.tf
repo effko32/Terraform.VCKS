@@ -12,7 +12,7 @@ resource "vkcs_compute_instance" "basic" {
   network {
     uuid = vkcs_networking_network.compute.id
   }
-  
+
   depends_on = [
     vkcs_networking_network.compute,
     vkcs_networking_subnet.compute
