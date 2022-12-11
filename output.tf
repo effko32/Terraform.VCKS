@@ -8,5 +8,5 @@ output "private_key" {
 }
 
 output "floating_ip" {
-  value = vkcs_networking_floatingip.fip
+  value = vkcs_networking_floatingip.fip.address
 }
