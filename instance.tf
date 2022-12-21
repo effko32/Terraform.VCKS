@@ -5,6 +5,7 @@ resource "vkcs_compute_instance" "basic" {
   flavor_id       = data.vkcs_compute_flavor.small.id
   key_pair        = vkcs_compute_keypair.keypair_1.name
   security_groups = [vkcs_networking_secgroup.secgroup_1.name]
+  user_data       = data.template_file.ubuntu.template
 
   metadata = {
     terraform = "true"
