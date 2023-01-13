@@ -1,5 +1,5 @@
 data "null_data_source" "ansible_inventory_file" {
-  depends_on = [ "resource.local_file.AnsibleInventory" ]
+  depends_on = [ resource.local_file.AnsibleInventory ]
   inputs = {
     name = "./templates/hosts.tpl"
   }
