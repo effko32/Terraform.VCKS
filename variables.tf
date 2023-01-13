@@ -27,3 +27,8 @@ variable "auth_url" {
   sensitive = true
   default = ""
 }
+
+variable "count" {
+  type = string
+  default = ""
+}
