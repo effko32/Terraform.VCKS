@@ -1,5 +1,5 @@
 #cloud-config
-package_upgrade: false
+package_upgrade: true
 
 password: ${password}
 chpasswd: { expire: False }

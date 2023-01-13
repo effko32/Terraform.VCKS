@@ -32,3 +32,8 @@ variable "vm_count" {
   type = string
   default = ""
 }
+
+variable "image" {
+  type = string
+  default = ""
+}
