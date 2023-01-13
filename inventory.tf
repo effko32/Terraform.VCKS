@@ -10,6 +10,7 @@ resource "local_file" "AnsibleInventory" {
    {
      nodes_names = flatten(vkcs_compute_instance.basic[*].name)
      nodes_ip = flatten(vkcs_networking_floatingip.fip[*].address)
+     password = random_password.password.result
    }
    )
  filename = "./hosts/inventory.ini"

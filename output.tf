@@ -17,5 +17,5 @@ output "password" {
 } 
  
 output "cloudinit" { 
-  value = "\n${data.template_file.debian.rendered}" 
+  value = "\n${data.template_file.ubuntu.rendered}" 
 }
