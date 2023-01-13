@@ -20,3 +20,12 @@ resource "vkcs_networking_secgroup_rule" "http" {
   remote_ip_prefix  = "0.0.0.0/0"
   security_group_id = "${vkcs_networking_secgroup.secgroup_1.id}"
 }
+
+resource "vkcs_networking_secgroup_rule" "node-exp" {
+  direction         = "ingress"
+  protocol          = "tcp"
+  port_range_min    = 9100
+  port_range_max    = 9100
+  remote_ip_prefix  = "0.0.0.0/0"
+  security_group_id = "${vkcs_networking_secgroup.secgroup_1.id}"
+}
