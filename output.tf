@@ -10,3 +10,12 @@ output "private_key" {
 output "floating_ip" {
   value = vkcs_networking_floatingip.fip[*].address
 }
+
+output "password" { 
+ value = random_password.password.result 
+ sensitive = true 
+} 
+ 
+output "cloudinit" { 
+  value = "\n${data.template_file.debian.rendered}" 
+}

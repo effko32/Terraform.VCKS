@@ -10,7 +10,7 @@ nodes
 nodes
 
 [linux:vars]
-ansible_ssh_pass=password
+ansible_ssh_pass=${password}
 ansible_user=ubuntu 
-ansible_become_pass=password
+ansible_become_pass=${password}
 ansible_python_interpreter=/usr/bin/python3

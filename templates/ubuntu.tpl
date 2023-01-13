@@ -1,7 +1,7 @@
 #cloud-config
 package_upgrade: true
 
-password: password
+password: ${password}
 chpasswd: { expire: False }
 ssh_pwauth: True
 
