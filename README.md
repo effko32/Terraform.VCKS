@@ -1,5 +1,5 @@
 # Example for terraform provider VKCS
-## Variables:
+#### Variables:
 username - Account from mcs.mail.ru\
 password - Password from mcs.mail.ru\
 project_id - Project ID from mcs.mail.ru\
