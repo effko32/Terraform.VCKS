@@ -28,7 +28,7 @@ variable "auth_url" {
   default = ""
 }
 
-variable "count" {
+variable "vm_count" {
   type = string
   default = ""
 }
