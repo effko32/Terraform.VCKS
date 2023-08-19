@@ -3,6 +3,7 @@
 **/hosts/*
 **/hosts/*.pem
 **/**/*.pem
+tfplan
 
 # .tfstate files
 *.tfstate
