@@ -1,9 +1,9 @@
-data "null_data_source" "ansible_inventory_file" {
-  depends_on = [ resource.local_file.AnsibleInventory ]
-  inputs = {
-    name = "./templates/hosts.tpl"
-  }
-}
+# data "null_data_source" "ansible_inventory_file" {
+#   depends_on = [ resource.local_file.AnsibleInventory ]
+#   inputs = {
+#     name = "./templates/hosts.tpl"
+#   }
+# }
 
 resource "local_file" "AnsibleInventory" {
    content = templatefile("./templates/hosts.tpl",
